@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Source Sans Pro",sans-serif;
+    color:white;
+	text-align: center;	
+}
+
+.wrapper .nav_bar #logo{
+    /*image */
+    width:102px;
+    height:33px;
+    margin: 12px;
+}
+.wrapper .nav_bar #btn-menu{
+    height:50px;
+    width: 50px;
+    border-radius:10px;
+    margin-right: 12px;
+    background-color:rgba(0,0,0,0.0);   
+}
+
+.wrapper .body .melbanner #btn-menu1{
+    height:50px;
+    width: 50px;
+    border-radius:10px;
+    background-color:rgba(0,0,0,0.0);  
+}
+
+.wrapper .body .melbanner #btn-menu1.okmenu{
+    height:50px;
+    width: 50px;
+    border-radius:10px;
+    background-color:rgba(0,0,0,0.0);
+    display:none;
+}
+
+body{
+    background: #565656;
+    overflow-y: scroll;
+	width:100%;
+}
+
+.wrapper{
+    display:flex;
+    overflow: hidden;
+    position:relative; 
+    width:100%;
+}
+
+.wrapper .nav_bar{
+    position:fixed;
+    height: 100%;
+    width: 250px;
+    display: initial;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content:space-between;
+    display:none;
+}
+/*IMPORTANT TOGGLE*/
+.wrapper .nav_bar.okmenu{
+    position:fixed;
+    height: 100%;
+    width: 250px;
+    display: initial;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content:space-between;
+}
+
+.wrapper .nav_bar #menu{
+    width:50px;
+    height:50px;
+    padding-right:4px;
+    padding-bottom: 6px;
+}
+
+.wrapper .body #menu{
+    width:50px;
+    height:50px;
+    padding-right:4px;
+    padding-bottom: 6px;
+}
+
+.wrapper .body{
+    height: 100%;
+    width:100%;
+	background-color: black;
+    padding-left: 12px;
+    padding-right:12px;
+	
+}
+
+
+/*IMPORTANT TOGGLE*/
+.wrapper .body.yesmenu{
+    height: 100%;
+    margin-left: 250px;
+    background-color: black;
+    padding-left: 12px;
+    padding-right:12px;
+}
+
+footer{
+  background-color: rgba(105,105,105,0.3);
+}
+footer ul{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul li{
+    height: auto;
+    padding:12px;
+    border : 1px solid white;
+    text-align: center;
+}
+
+footer ul li:hover{
+    background-color: rgba(25,50,75,0.6);
+}

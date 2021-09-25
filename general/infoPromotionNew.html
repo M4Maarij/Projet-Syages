@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="img/logo.jpg"/>
+	<title>Promotions actuelles</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="InfoPromotionNew.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    <!-- .wrapper .body .melbanner #btn-menu.okmenu -->
+    <script>
+        function show_hide(){
+            var div = document.getElementById("navbar");
+            var body = document.getElementById("body");
+            var firstButton = document.getElementById("btn-menu1");
+            div.classList.toggle("okmenu");
+            body.classList.toggle("yesmenu");
+            firstButton.classList.toggle("okmenu");
+        }
+        </script>
+    <div class="wrapper">
+        <div class="nav_bar" id="navbar">
+            <img src="img/logo-4.png" id="logo">
+            <button id="btn-menu" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+            <h3>MENU - SECRÉTARIAT-PROF</h3>
+            <ul>
+                <li><a href="index_itg.html"><img src ="img/home.ico"/>ACCUEIL</a></li>
+                <li><a href="#"><img src ="img/search.png"/>RECHERCHER</a></li>
+                <li><a href="infoPromotionNew.html"><img src ="img/diploma.png"/>PROMOTIONS</a></li>
+                <li><a href="#"><img src ="img/user.png"/>MES INFORMATIONS</a></li>
+                <li><a href="#"><img src ="img/deconnexion.png"/>DECONNEXION</a></li>
+            </ul>
+        </div>
+        <div class="body" id="body">
+            <div class="melbanner">
+                <button id="btn-menu1" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+                <img src="img/logo.png" id="logo"/>
+                <input type="text" placeholder="Entrez des mots-clés" id="searchbar"><input type="submit" value="Rechercher" id="submitbutton">
+                <img src="img/david.jpg" id="user"/>
+            </div>
+
+            <div class=contenu>
+                <h2>Promotion : DAEU A, trimestre 1 (2020 - 2021)</h2>
+                <h3>(prof)Ma matière : <a href="/gestion_controle.html">Mathématiques</a></h3>
+                <h3>Disciplines enseignées :</h3>
+                    <div class="tababs">
+                    <div class="tab">
+                            
+                        <table>
+                            <tr><th>Matière</th><th>Professeurs</th><th>Inscrits</th><th>Evaluations</th><th>Absences totales</th><th>Justifiées</th><th>Non justifiée</th></tr>
+                            <tr><td>Obligatoire :</td><td colspan="6"></td></tr>
+                            <tr><td><a href="#">Français</a></td><td>J. PierreJ. Pol</td><td>93</td><td>1 en cours</td><td>23</td><td>19</td><td>4</td></tr>
+                            <tr><td><a href="#">Anglais</a></td><td>J. Pierr</td><td>93</td><td></td><td>19</td><td>19</td><td>2</td></tr>
+                            <tr><td>Optionnel :</td><td colspan="6"></td></tr>
+                            <tr><td><a href="#">Histoire</a></td><td>J. Pier</td><td>63</td><td></td><td>19</td><td>19</td><td>89</td></tr>
+                            <tr><td><a href="#">Geographie</a></td><td>J. Pie</td><td>63</td><td></td><td>19</td><td>19</td><td>52</td></tr>
+                            <tr><td><a href="#">Mathématiques</a></td><td>J. Pi</td><td>30</td><td></td><td>19</td><td>19</td><td>89</td></tr>
+                            <tr><td><a href="#">Sciences sociales</a></td><td>J. Po</td><td>30</td><td></td><td>19</td><td>19</td><td>52</td></tr>
+
+                        </table>
+                </div></div>
+
+
+                    
+                    <div id=liens>
+                        <div id="wrapper2">
+                            <div id="container_wrapper2">
+                                <h3>Acces aux informations</h3>
+                                <p><a href="#">Liste des étudiants</a></p>
+                                <p><a href="infoPromotionAncienne.html">Liste des anciennes promotions</a></p>
+                                <h3>Gerer les absences</h3>
+                        
+                            
+                            
+                                <p><a href="absence2.html">Calendrier des absences</a></p>
+                                <p><a href="absence.html">Liste des élèves absents</a></p>
+                            </div>
+                            
+                            <div id="chart">
+                                <canvas id="myChart" width="23px" height="5px"></canvas>
+                                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+                                <script>
+                                var ctx = document.getElementById('myChart').getContext('2d');
+                                var myChart = new Chart(ctx, {
+                                    type: 'pie',
+                                    data: {
+                                        labels: ['Justifiée','Injustifiée'],
+                                        datasets: [{
+                                            data: [84, 42],
+                                            backgroundColor: [
+                                                'rgba(54, 162, 235, 0.2)','rgba(255, 99, 132, 0.2)'
+                                                
+                                            ],
+                                            borderColor: [
+                                                'rgba(54, 162, 235, 1)','rgba(255, 99, 132, 1)'
+                                                
+                                            ],
+                                            borderWidth: 1
+                                        }]
+                                    }
+                                });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <footer></footer>
+
+</body>
+</html>

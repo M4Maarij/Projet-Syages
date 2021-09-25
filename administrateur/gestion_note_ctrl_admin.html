@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="img/logo.jpg"/>
+	<title>Gestion des Controles admin</title>
+    <link rel="stylesheet" type="text/css" href="style_ctrl_admin.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- .wrapper .body .melbanner #btn-menu.okmenu -->
+    <script>
+        function show_hide(){
+            var div = document.getElementById("navbar");
+            var body = document.getElementById("body");
+            var firstButton = document.getElementById("btn-menu1");
+            div.classList.toggle("okmenu");
+            body.classList.toggle("yesmenu");
+            firstButton.classList.toggle("okmenu");
+        }
+    </script>
+    <div class="wrapper">
+        <div class="nav_bar" id="navbar">
+            <img src="img/logo.jpg" id="logo">
+            <button id="btn-menu" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+            <h3>MENU - Admin</h3>
+            <ul>
+                <li><a href="enseignant_Accueuil.html"><img src ="img/home.ico"/>ACCUEIL</a></li>
+                <li><a href="recherche.html"><img src ="img/search.png"/>RECHERCHER</a></li>
+                <li><a href="infoPromotionNew.html"><img src ="img/diploma.png"/>PROMOTIONS</a></li>
+                <li><a href="#"><img src ="img/user.png"/>MES INFORMATIONS</a></li>
+                <li><a href="#"><img src ="img/deconnexion.png"/>DECONNEXION</a></li>
+            </ul>
+        </div>
+        <div class="body" id="body">
+            <div class="melbanner">
+				<button id="btn-menu1" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+                <img src="img/logo.png" id="logo"/>
+                <input type="text" placeholder="Entrez des mots-clés" id="searchbar"><input type="submit" value="Rechercher" id="submitbutton">
+                <img src="img/david.jpg" id="user"/>
+            </div>
+            <h2><br/>Université XXXXXXX</h2><br/>
+			
+			<h3>Année : 2020/2021</h2><br/>
+			<h2>Semestre 1</h2><br/>
+			<div class="filtre">
+						<form action="#" method="post" id="filtre_form">
+                   
+                        <p>Date du : <input type="date" value="" name="datedu"/></p>
+						<p>     au : <input type="date" value="" name="dateau"/></p>
+                        <p>DAEU : 
+                        <select name="classe" value="classe">
+							<option name="classeProm">DAEU A et B</option>
+                            <option name="classeA">DAEU option A</option>
+                            <option name="classeB">DAEU option B</option>
+                        </select></p>
+                        <p>Matières : 
+                        <select name="matiere" value="matiere">
+							<option>Aucune</option>
+                            <option>Français</option>
+                            <option>Mathématiques</option>
+                            <option>Anglais</option>
+                            <option>Physique</option>
+                            <option>Chimie</option>
+                            <option>Biologie</option>
+                            <option>Histoire/Géographie</option>
+                            <option>Introduction au droit</option>
+                            <option>Sciences sociales</option>
+                            <option>Civilisation de l'Islam</option>
+                        </select></p>
+					<button class="btn_submit" type="submit">Valider</button>
+                    </form>
+			</div>
+			<!-- <input name="submit" type="submit" class="submit" value="Creer une évaluation" /> -->
+			<!-- <input name="submit" type="submit" id="submit" class="submit" value="Faire l'appel" /> -->
+			<br/><br/><br/>
+			
+			<div class="tababs">
+				<div class="tab">
+			<table id="tab_eval">
+				<tr><th>Date </th><th>Promotion </th><th>Matiere</th><th>Professeur</th><th>Visibilité</th></tr>
+				<tr><td>1/2/2020</td><td>DEAU A</td><td>Mathématiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>
+				<tr><td>2/2/2020</td><td>DEAU B</td><td>Français</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>    
+				<tr><td>3/5/2020</td><td>DEAU A</td><td>Mathématiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr> 
+				<tr><td>4/2/2020</td><td>DEAU A</td><td>Français</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>     
+				<tr><td>5/2/2020</td><td>DEAU A</td><td>Anglais</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="invisible" value="1">invisible</option><option class="visible" value="2">visible</option></select></td></tr>   
+				<tr><td>6/4/2020</td><td>DEAU B</td><td>Mathématiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>   
+				<tr><td>8/2/2020</td><td>DEAU B</td><td>Français</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>    
+				<tr><td>9/2/2020</td><td>DEAU B</td><td>Mathématiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr> 
+				<tr><td>10/4/2020</td><td>DEAU B</td><td>Physiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>    
+				<tr><td>11/6/2020</td><td>DEAU B</td><td>Mathématiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>   
+				<tr><td>12/2/2020</td><td>DEAU A</td><td>Mathématiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="invisible" value="1">invisible</option><option class="visible" value="2">visible</option></select></td></tr>  
+				<tr><td>13/2/2020</td><td>DEAU A</td><td>Français</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>    
+				<tr><td>14/8/2020</td><td>DEAU A</td><td>Anglais</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>   
+				<tr><td>15/2/2020</td><td>DEAU A</td><td>Physiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="invisible" value="1">invisible</option><option class="visible" value="2">visible</option></select></td></tr>   
+				<tr><td>16/2/2020</td><td>DEAU B</td><td>Anglais</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>     
+				<tr><td>17/8/2020</td><td>DEAU B</td><td>Mathématiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>    
+				<tr><td>18/2/2020</td><td>DEAU A</td><td>Français</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>    
+				<tr><td>19/4/2020</td><td>DEAU B</td><td>Physiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>     
+				<tr><td>20/2/2020</td><td>DEAU A</td><td>Mathématiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="invisible" value="1">invisible</option><option class="visible" value="2">visible</option></select></td></tr>    
+				<tr><td>21/11/2020</td><td>DEAU A</td><td>Français</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>     
+				<tr><td>22/2/2020</td><td>DEAU A</td><td>Mathématiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>     
+				<tr><td>23/10/2020</td><td>DEAU A</td><td>Anglais</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>     
+				<tr><td>24/4/2020</td><td>DEAU B</td><td>Physiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="invisible" value="1">invisible</option><option class="visible" value="2">visible</option></select></td></tr>    
+				<tr><td>25/7/2020</td><td>DEAU B</td><td>Français</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>    
+				<tr><td>26/2/2020</td><td>DEAU B</td><td>Mathématiques</td><td>Nom Prénon</td><td > <select name="view_ctrl_abs" id="view_ca"><option class="visible" value="1">visible</option><option class="invisible" value="2">invisible</option></select></td></tr>
+			</table>
+			<script type="text/javascript">
+				document.addEventListener("DOMContentLoaded",() => {
+				const rows = document.querySelectorAll("tr[data-href]");
+				rows.forEach(row => {
+					row.addEventListener("click",() => {
+						window.location.href = row.dataset.href;
+					});
+				});
+				//console.load(rows);
+				
+				});
+			</script>
+			<br/><br/><br/>
+			<div id="btn_eval_abs">
+				<form action="gestion_note_ctrl_admin.html">
+					<button class="btn_submit" type="submit">Annuler</button>
+				</form>
+				<form action="gestion_note_ctrl_admin.html">
+					<button class="btn_submit" type="submit">Enregister</button>
+				</form>
+			</div>
+			<br/><br/><br/>
+			<br/><br/><br/>
+			<br/><br/><br/>
+			<br/><br/><br/>
+				</div>
+			</div>
+        
+		</div>
+    </div>
+	<footer id="bas-de-page">
+    <p>
+      <span>Contact: adresse.mail@exemple.com</span>
+      <span>Copyright (c) - 2020</span>
+      <span>DUT S3 vert -SYAGES- 2020 <a href="http://ataraxy.info/Accueil">ataraxy.info</a></span>
+    </p>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+/*
+Syages©®
+@author : inthragith;
+@version : 1.0;
+@date : 10/10/2020;
+*/
+
+/*start*/
+.wrapper .body .page-graph .charts-container{
+    position:relative;
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.wrapper .body .page-graph .charts-container .chart-container{
+    position: relative;
+    flex:.5;
+    margin-bottom: 25px;
+}
+
+.wrapper .body .page-graph{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+/*END*/
+
+
+@media only and screen (max-width:800px){}

@@ -1,0 +1,576 @@
+
+/*****************CODE COMMUN*************************/
+
+/**************WRAPPER, BODR, NAVBAR ETC****************/
+*{
+    margin:0px; 
+    padding:0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Source Sans Pro",sans-serif;
+    color:white;  
+}
+
+.wrapper .nav_bar #logo{
+    /*image */
+    width:102px;
+    height:33px;
+    margin: 12px;
+    
+}
+
+.wrapper .nav_bar #btn-menu{
+    height:50px;
+    width: 50px;
+    border-radius:10px;
+    margin-right: 12px;
+    background-color:rgba(0,0,0,0.0); 
+    
+}
+
+.wrapper .body .melbanner #btn-menu1{
+    height:50px;
+    width: 50px;
+    border-radius:10px;
+    background-color:rgba(0,0,0,0.0);
+    
+    
+}
+
+.wrapper .body .melbanner #btn-menu1.okmenu{
+    height:50px;
+    width: 50px;
+    border-radius:10px;
+    background-color:rgba(0,0,0,0.0);
+    display:none;
+    
+}
+
+.melbanner{
+    padding-bottom: 20%;
+}
+
+body{
+    background: #000;
+    display:inline-flex;
+    overflow-y: scroll;
+    
+}
+
+.wrapper{
+    display:flex;
+    overflow: hidden;
+    position:absolute;
+    width: 100%;
+   
+}
+
+.wrapper .nav_bar{
+    position:fixed;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content:space-between;
+    display:none;
+}
+
+/************************************************/
+
+
+
+/*************IMPORTANT TOGGLE*******************/
+.wrapper .nav_bar.okmenu{
+    position:fixed;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content:space-between;
+}
+
+.wrapper .nav_bar #menu{
+    width:50px;
+    height:50px;
+    padding-right:4px;
+    padding-bottom: 6px;
+}
+
+.wrapper .body #menu{
+    width:50px;
+    height:50px;
+    padding-right:4px;
+    padding-bottom: 6px;
+}
+
+.wrapper .body{
+    height: 100%;
+    background-color: black;
+    padding-left: 20%;
+    padding-right:auto;
+    
+    
+    
+   
+}
+
+/************IMPORTANT TOGGLE***********************/
+.wrapper .body.yesmenu{
+    height: 100%;
+    margin-left: 250px;
+    background-color: black;
+    padding-left: 12px;
+    padding-right:12px;
+}
+
+.wrapper .body .tabeval{
+    display: flex;
+    overflow: hidden;
+}
+
+.wrapper .body .tabeval table td{
+    text-align: center;
+}
+
+.wrapper .body .tabeval table{
+    border-collapse: collapse ;
+}
+
+
+.wrapper .body .tabeval table tr,td,th{
+    border:2px solid rgba(58, 58, 211, 0.747);
+}
+
+.wrapper .body .tabeval table tr:hover{
+    background-color: rgb(1, 238, 255);
+    color:black;
+}
+
+.wrapper .body .tabeval table th{
+    background-color:rgba(100,100,255,0.6);
+}
+
+.wrapper .body .tabeval table td,tr,th{padding:10px;}
+
+.wrapper .body .tabeval tab tr{
+    margin: auto;
+}
+
+.wrapper .body .melbanner #searchbar{ 
+    margin-left:30px;
+    width:40%;
+    margin-left:20px;
+    margin-top:08px;
+    height: 43px;
+    color:white;
+    background-color: black;    
+}
+
+.wrapper .body .melbanner #searchbar:hover{
+    background-color: white;
+    color:black;
+}
+
+.wrapper .body .melbanner #submitbutton{
+    height: 40px;
+    margin-left:2px;
+    width:90px;
+    border : 1px solid white;
+    background-color: rgba(0,0,0);
+    color: white;
+}
+
+.wrapper .body .melbanner #submitbutton:hover{
+    height: 40px;
+    margin-left:2px;
+    width:90px;
+    border : 1px solid white;
+    background-color: rgb(1, 238, 255);
+    color: black;
+}
+
+#submitbutton{
+    margin-top: 10px;
+    height: 100px;
+    color:black;
+}
+
+.wrapper .body .melbanner{
+    display: flex;
+    overflow: hidden;
+    height: 75px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.wrapper .body .melbanner #logo{
+    /*530 × 435*/
+    display:inline-flex; 
+    overflow: hidden;
+    width:132px;
+    height: 106px;
+}
+.wrapper .body #user{
+    display: inline-flex;
+    overflow: hidden;
+    margin-left: auto;
+    margin-bottom: auto;
+    width:50px;
+    border-radius: 200px;
+    
+}
+
+.nav_bar{
+    background-color: rgba(18,18,23,0.8); 
+    padding-top: 10px;
+    
+}
+
+.wrapper .nav_bar ul li a img{
+   width:30px;
+    margin-top:2px;
+    justify-content: center;
+    
+}
+.wrapper .nav_bar h3{
+    padding: 12px;
+    padding-bottom: 0px;
+    margin: 0px;
+    color:#fff;
+}
+
+.wrapper .nav_bar ul li{
+    padding: 20px;
+    width:100%;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    
+}
+.wrapper .nav_bar ul{
+    width:100%;
+}
+
+.wrapper .nav_bar ul li:hover{
+    background: rgba(100,100,255,0.8);
+    
+}
+
+.wrapper .nav_bar ul li a{
+    color : rgba(255,255,255,0.8);
+    display: block;
+    text-align:left;   
+}
+
+.wrapper .body .tabeval .eval{
+    margin-left: 50px;
+    width: 16%;
+    height: min-content;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 2px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .body .tabeval .eval h4{
+    width:100%;
+    background-color:rgba(100,100,255,0.8); 
+    padding: 10px;
+    border:2px solid white;
+}
+
+.wrapper .body .tabeval .eval form{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wrapper .body .tabeval .eval input, .wrapper .body .tabeval .eval select{
+    background-color: rgb(71, 68, 68);
+    margin: 05px;
+    display: inline-block;
+    flex-direction:row;
+    width:70%
+}
+.wrapper .body .tabeval .eval select{
+    margin-left:5px;
+    border:1px solid white;
+    border-radius: 0px;
+}
+.wrapper .body .tabeval .eval p #submit{
+    font-size: 16px;
+    margin: 2px;
+    border:1px solid white;
+    border-radius:2px;
+}
+.wrapper .body .tabeval .eval p #submit:hover{
+    background-color: rgb(1, 238, 255);
+    color:black;
+}
+
+/********************************************************/
+/******************************CODE   COMMUN***********************************/
+
+
+/****************************CODE POUR PAGE ACCUEIL PROFS****************************************/
+
+/*******************************************************
+*         Pour les 2 tabs promo active/alumni          *
+*******************************************************/
+
+.wrapper .body .tabpromo{
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30PX;
+    
+}
+
+.tabB{
+    width: 100%;
+    padding-right: -20%;
+}
+
+.wrapper .body .tabpromo table td{
+    text-align: center;
+}
+
+.wrapper .body .tabpromo table{
+    border-collapse: collapse ;
+}
+
+.wrapper .body .tabpromo table tr,td{
+    border:2px solid rgb(19, 17, 17);
+}
+
+.wrapper .body .tabpromo table tr:hover{
+    background-color: rgb(1, 238, 255);
+    color:black;
+}
+.wrapper .body .tabpromo table th{
+    background-color:rgba(100,100,255,0.6);
+    border-color: rgba(58, 58, 211, 0.747);
+}
+.wrapper .body .tabpromo table td,tr,th{padding:10px;}
+
+.wrapper .body .tabpromo tab tr{
+    margin: auto;
+}
+/***************************************************/
+
+
+
+
+/***************************************************
+*               TITRE DE TABS                      *
+***************************************************/
+
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/**************************************************/
+
+
+
+
+
+/*******************************POUR SCROLL TAB*****************************/
+.scroll{
+    
+    height: 150px;
+    overflow-y: scroll;
+    border-bottom: 1px solid rgb(24, 23, 23);
+    
+}
+
+.wrapper{
+    margin-bottom: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(56, 66, 65, 0.15);
+    
+   
+    
+}
+
+.styled-table thead tr {
+    background-color: rgba(100,100,255,0.6);
+    color: #ffffff;
+	text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+	padding: 20px 15px;
+
+
+}
+
+.styled-table tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+
+.styled-table {
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 15%;
+    margin-top: 2%;
+  }
+  
+
+  li {
+
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    
+    padding-right: 5.3333333%;
+}
+
+h1 {
+    margin: 0 0 1.5em;
+    border-bottom: 1px solid #ccc;
+    
+    padding: 0 0 .25em;
+}
+/************************************************************************************************/
+
+
+
+
+/***********************************CIRCULAR PROGRESS BAR****************************************/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.wrapper2{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper2{
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+
+}
+.wrapper2 .card{
+  background: rgb(7, 7, 7);
+  width: calc(33% - 20px);
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(207, 207, 207, 0.932);
+}
+.wrapper2 .card .circle{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+  
+}
+
+.card .circle .box,
+.card .circle .box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+}
+.card .circle .box{
+  height: 100%;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.card .circle:hover .box{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .box span,
+.wrapper2 .card .text{
+  background: -webkit-linear-gradient(left, #673dda, #42b0fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.circle .box span{
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.card .circle:hover .box span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.card .text{
+  font-size: 20px;
+  font-weight: 600;
+}
+@media(max-width: 753px){
+  .wrapper2{
+    max-width: 700px;
+  }
+  .wrapper2 .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 505px){
+  .wrapper2{
+    max-width: 500px;
+  }
+  .wrapper2 .card{
+    width: 100%;
+  }
+}
+/**********************************************************************************/
+
+
+
+/********************************* heading *****************************************/
+.heading{
+  text-align: center;
+  color: rgb(233, 231, 231);
+  padding: 0%;
+  font-size: 200%;
+  margin-top: 10%;
+  margin-bottom: -90px;
+}
+
+
+/*********************************************************************************/
+/************************CODE POUR PAGE ACCUEIL PROFS*****************************/

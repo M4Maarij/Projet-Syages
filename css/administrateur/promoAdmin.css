@@ -1,0 +1,60 @@
+select, option,input{
+    color:black;
+    margin:0.2em;
+}
+
+
+.contenu{
+    margin:2em;
+}
+body, .wrapper, .body{
+    width:100%;
+}
+.promotionEnCours{
+    width:100%;
+}
+td{
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    padding:0.2em;
+}
+.contenu a{
+    color: #3B59CA;
+    font-weight: bold;
+}
+
+.derouler1{
+    display:none;
+}
+
+.derouler2{
+    display:none;
+}
+
+.width15{
+    width:15%
+}
+.width5{
+    width:5%
+}
+.width10{
+    width:10%;
+}
+
+h2{
+    margin:1% 0% 1%;
+}
+h3{
+    margin:1.5% 0% 1.5%;
+}
+
+.flex{
+    display:flex;
+}
+.flex_contenu1{
+    width:50%;
+}

@@ -1,0 +1,132 @@
+.wrapper .body .tababs{
+    overflow: hidden;
+}
+
+.wrapper .body .tababs table td{
+    text-align: center;
+}
+
+.wrapper .body .tababs table{
+    border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrapper .body .tababs table tr,td,th{
+  border : 2px solid white;
+}
+
+.wrapper .body .tababs table tr : hover{
+    background-color: rgba(255,255,1,1);
+    color:black;
+}
+
+.body .tababs table th,.moy_bas{
+    background-color:rgba(100,100,255,0.6);
+}
+
+.body .tababs table td,tr,th{padding:10px}
+
+.body .tababs tab tr{
+    margin: auto;
+}
+.body .tababs table th.bt_controle, td.moy_eval_bas{
+	background-color: #90E1AE;
+	color:black;
+}
+.body .tababs table th.bt_controle, td.moy_gen{
+	background-color: #00E1AE;
+	color:black;
+}
+
+.body .tababs table th.bt_exam{
+		background-color: #12E1AE;
+}
+.body .tababs table th.bt_eval:hover{
+  background-color: yellow;
+  color:black;
+}
+
+#tab_abs{
+	width:60%;
+}
+#tab_note{
+	width:60%;
+}
+#tab_eval{
+	width:85%;
+}
+
+tr[data-href]{
+	cursor : pointer;
+}
+tr[data-href]:hover {
+  /* background-color: #032458; */
+  background-color: #4a93d8;
+  color: black;
+}
+input[type="datetime-local"] {
+    color: black;
+    width: 200px;
+    font-size: 20px;
+}
+form .btn_submit{
+	padding:10px;
+	border-radius: 10px;
+	color:white;
+	font-size:25px;
+	padding-left: 12px;
+    padding-right:12px;
+	background-color:#031858;
+	cursor: pointer;
+}
+
+form .btn_submit:hover{
+	background-color:yellow;
+	color:black;
+}
+
+.check_abs{
+  width:100%;
+  height:25px;
+  cursor: pointer;
+}
+#btn_eval_abs{
+	display:flex;
+	justify-content: space-evenly;
+}
+#tab_note input[type=number]{
+	color:black;
+	width:75px;
+	font-size:20px;
+}
+input[type=date]{
+	color:black;
+	width:200px;
+	font-size:20px;
+}
+label{
+	/* color:black; */
+	/* width:200px; */
+	font-size:20px;
+}
+select,option, form{
+	color:black;
+	/* width:200px; */
+	font-size:20px;
+}
+	/* Hassan */
+
+#info_modif{
+	cursor : pointer;
+	color : white;
+	border-radius: 50%;
+	background-color:red;
+	width:20px;
+	height:20px;
+	margin-left:10px;
+}
+
+.fitre{
+	display: inline;
+}

@@ -1,0 +1,15 @@
+/*
+Syages©®
+@author : inthragith;
+@version : 1.0;
+@date : 10/10/2020;
+*/
+
+/*css accueil student*/
+.wrapper .body .bonne-note{
+    background-color: rgba(00,150,1,1);
+}
+
+.wrapper .body .mauvaise-note{
+    background-color: rgba(150,10,1,1);
+}

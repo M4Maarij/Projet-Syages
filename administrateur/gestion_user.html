@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="img/logo.jpg"/>
+	<title>Gestion des users - DAEU</title>
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/accueil-secretaire-professeur.css">
+    <link rel="stylesheet" type="text/css" href="css/accueil.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <!-- .wrapper .body .melbanner #btn-menu.okmenu -->
+    <script>
+        function show_hide(){
+            var div = document.getElementById("navbar");
+            var body = document.getElementById("body");
+            var firstButton = document.getElementById("btn-menu1");
+            div.classList.toggle("okmenu");
+            body.classList.toggle("yesmenu");
+            firstButton.classList.toggle("okmenu");
+        }
+        </script>
+    <div class="wrapper">
+        <div class="nav_bar" id="navbar">
+            <img src="img/logo-4.png" id="logo">
+            <button id="btn-menu" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+            <h3>MENU - SECRÉTARIAT</h3>
+            <ul>
+                <li><a href="#"><img src ="img/home.ico"/>ACCUEIL</a></li>
+                <li><a href="#"><img src ="img/search.png"/>RECHERCHER</a></li>
+                <li><a href="#"><img src ="img/diploma.png"/>PROMOTIONS</a></li>
+                <li><a href="#"><img src ="img/settings.png"/>GESTION USER</a></li>
+                <li><a href="#"><img src ="img/graph.ico"/>GRAPHIQUES</a></li>
+                <li><a href="#"><img src ="img/user.png"/>MES INFORMATIONS</a></li>
+                <li><a href="#"><img src ="img/deconnexion.png"/>DECONNEXION</a></li>
+            </ul>
+        </div>
+        <div class="body" id="body">
+           
+            <div class="melbanner">
+            
+                <button id="btn-menu1" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+                <img src="img/logo.png" id="logo"/>
+                <input type="text" placeholder="Entrez des mots-clés" id="searchbar"><input type="submit" value="Rechercher" id="submitbutton">
+                <img src="img/david.jpg" id="user"/>
+            
+            </div>
+            
+            
+            <h2><br/>Mes informations<br></h2><br/>
+            <div class="tababs" style='display: flex;flex-direction: column;'>
+                    <div class="tab" style="flex: auto;" >
+                      <div class='tababs'>             
+<div class="form-conteneur" style="width:50%;margin: 0;">
+                    <form action="" method="post">
+                        <h2>Créer des utilisateurs</h2>
+                        <div class="champ-formulaire">
+                            <p>Prénom</p>
+                            <input type="text" id="name" name="name" placeholder="Prénom"/>
+                        </div>
+                        
+                        <div class="champ-formulaire">
+                            <p>Nom</p>
+                            <input type="text" id="name" name="name" placeholder="Nom"/>
+                        </div>
+                        
+                        <div class="champ-formulaire">
+                            <p>Promo</p>
+                            <select id="sel" name="selection">
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                
+                            </select>
+                        </div>
+                        
+                        <div class="champ-formulaire">
+                            <p>Rôle</p>
+                            <select id="sel" name="role">
+                                <option value="a">Eleve</option>
+                                <option value="b">Professeur</option>
+                                <option value="b">Secrétaire</option>
+                                <option value="b">Admin</option>
+                                
+                            </select>
+                        </div>
+                        <div class="champ-formulaire">
+                            <p>Avatar</p>
+                            <input type="file" id="name" name="file" style="margin: 1px" />
+                        </div>
+                        <p>Prendre en compte les utilisateurs malveillants pouvant uploader du php malveillant.</p>    
+                        <input type="submit" value="Créer" id="btn"/>
+                    </form>
+    </div></div>  
+                        <table style="magin-bottom:12px;">
+                        <tr><th>Nom</th><th>Prénom</th><th>Identifiant</th><th>Promo</th><th>Avatar</th><th>Mail</th><th>Mot de passe</th><th>modifier</th></tr>
+                        <tr><td>Hébert</td><td>David</td><td>11222000</td><td>Promo A</td><td><img src="img/david.jpg" style="height: 40%"></td><td>d.hebert@mail.com</td><td>•••••••••••</td><td style="text-decoration: underline">modifier</td></tr>
+                            <tr><td>Hébert</td><td>David</td><td>11222000</td><td>Promo A</td><td><img src="img/david.jpg" style="height: 40%"></td><td>d.hebert@mail.com</td><td>•••••••••••</td><td style="text-decoration: underline">modifier</td></tr>
+                            <tr><td>Hébert</td><td>David</td><td>11222000</td><td>Promo A</td><td><img src="img/david.jpg" style="height: 40%"></td><td>d.hebert@mail.com</td><td>•••••••••••</td><td style="text-decoration: underline">modifier</td></tr>
+                            <tr><td>Hébert</td><td>David</td><td>11222000</td><td>Promo A</td><td><img src="img/david.jpg" style="height: 40%"></td><td>d.hebert@mail.com</td><td>•••••••••••</td><td style="text-decoration: underline">modifier</td></tr>
+                            <tr><td>Hébert</td><td>David</td><td>11222000</td><td>Promo A</td><td><img src="img/david.jpg" style="height: 40%"></td><td>d.hebert@mail.com</td><td>•••••••••••</td><td style="text-decoration: underline">modifier</td></tr>
+                            <tr><td>Hébert</td><td>David</td><td>11222000</td><td>Promo A</td><td><img src="img/david.jpg" style="height: 40%"></td><td>d.hebert@mail.com</td><td>•••••••••••</td><td style="text-decoration: underline">modifier</td></tr>
+                            <tr><td>Hébert</td><td>David</td><td>11222000</td><td>Promo A</td><td><img src="img/david.jpg" style="height: 40%"></td><td>d.hebert@mail.com</td><td>•••••••••••</td><td style="text-decoration: underline">modifier</td></tr>
+                            <tr><td>Hébert</td><td>David</td><td>11222000</td><td>Promo A</td><td><img src="img/david.jpg" style="height: 40%"></td><td>d.hebert@mail.com</td><td>•••••••••••</td><td style="text-decoration: underline">modifier</td></tr>
+                            <tr><td>Hébert</td><td>David</td><td>11222000</td><td>Promo A</td><td><img src="img/david.jpg" style="height: 40%"></td><td>d.hebert@mail.com</td><td>•••••••••••</td><td style="text-decoration: underline">modifier</td></tr>
+                            
+                        </table><br><br> 
+                </div>
+
+            </div><br>
+                
+            
+            
+            <footer>
+                <ul>
+                    <li><a href="mentionsleg.html">Mentions légales</a></li>
+                    <li><a href="apropos.html">À Propos - Syages©</a></li>
+                    <li><a href="apropos.html">® Design & Création : Inthragith JEYASEGARAN </a></li>
+                </ul>
+            </footer>
+        </div>
+        
+
+    </div>
+</body>
+</html>

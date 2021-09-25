@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="img/logo.jpg"/>
+	<title>Informations promotions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="promoAdmin.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    <!-- .wrapper .body .melbanner #btn-menu.okmenu -->
+    <script>
+        function show_hide(){
+            var div = document.getElementById("navbar");
+            var body = document.getElementById("body");
+            var firstButton = document.getElementById("btn-menu1");
+            div.classList.toggle("okmenu");
+            body.classList.toggle("yesmenu");
+            firstButton.classList.toggle("okmenu");
+        }
+        </script>
+    <div class="wrapper">
+        <div class="nav_bar" id="navbar">
+            <img src="img/logo-4.png" id="logo">
+            <button id="btn-menu" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+            <h3>MENU - SECRÉTARIAT</h3>
+            <ul>
+                <li><a href="#"><img src ="img/home.ico"/>ACCUEIL</a></li>
+                <li><a href="#"><img src ="img/search.png"/>RECHERCHER</a></li>
+                <li><a href="#"><img src ="img/diploma.png"/>PROMOTIONS</a></li>
+                <li><a href="#"><img src ="img/user.png"/>MES INFORMATIONS</a></li>
+                <li><a href="#"><img src ="img/deconnexion.png"/>DECONNEXION</a></li>
+            </ul>
+        </div>
+        <div class="body" id="body">
+            <div class="melbanner">
+                <button id="btn-menu1" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+                <img src="/img/logo.png" id="logo"/>
+                <input type="text" placeholder="Entrez des mots-clés" id="searchbar"><input type="submit" value="Rechercher" id="submitbutton">
+                <img src="img/david.jpg" id="user"/>
+            </div>
+
+
+            <div class="contenu">
+                <h2> Les promotions en cours</h2>
+
+                <table class="promotionEnCours">
+                    <tr><th class="width10"></th><th class="width15">Nom de la promotion</th><th class="width15">Date de début</th><th class="width15">Date de fin</th><th class="width5">Nombre d'élèves</th><th class="width15">Liens</th>
+                    </tr>
+                    <tr>
+                        <td onclick="$('.derouler1').css('display','table-row')">+</td>
+                        <td><a href="infoPromotionNew.html">DAEU A 1</a></td>
+                        <td>02/01/01</td>
+                        <td>02/01/01</td>
+                        <td>52</td>
+                        <td><a>voir absences</a></td>
+                    </tr>
+
+                    <tr class="derouler1">
+                        <th></th>
+                        <th>Matieres</th>
+                        <th>Professeurs</th>
+                        <th>Moyenne</th>
+                        <th>Coefficient</th>
+                        <th></th>
+                    </tr>
+                    <tr class="derouler1">
+                        <td rowspan=2>Obligatoire</td>
+                        <td><a>Francais</a></td>
+                        <td>Tanaka</br>Suika</td>
+                        <td>20</td>
+                        <td>3</td>
+                        <td><a href="EnseignantEval.html">voir évaluation</a></td>
+                    </tr>
+
+                    <tr class="derouler1">
+                        <td><a>Anglais</a></td>
+                        <td>Nana</td>
+                        <td>20</td>
+                        <td>3</td>
+                        <td><a>voir évaluation</a></td>
+                    </tr>
+
+                    <tr class="derouler1">
+                        <th rowspan=2>Optionnel</th>
+                        <td><a>Mathematiques</a></td>
+                        <td>Nana</td>
+                        <td>18</td>
+                        <td>2</td>
+                        <td><a>voir évaluation</a></td>
+                    </tr>
+
+                    <tr class="derouler1">
+                        <td><a>Geographie</a></td>
+                        <td>Nana</td>
+                        <td>15</td>
+                        <td>1</td>
+                        <td><a>voir évaluation</a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td onclick="$('.derouler2').css('display','table-row')">+</td>
+                        <td><a>DAEU B 1</a></td>
+                        <td>02/01/01</td>
+                        <td>02/01/01</td>
+                        <td>52</td>
+                        <td><a>voir absences</a></td>
+                    </tr>
+
+                    <tr class="derouler2">
+                        <th></th>
+                        <th>Matieres</th>
+                        <th>Professeurs</th>
+                        <th>Moyenne</th>
+                        <th>Coefficient</th>
+                        <th></th>
+                    </tr>
+                    <tr class="derouler2">
+                        <td rowspan=2>Obligatoire</td>
+                        <td><a>Francais</a></td>
+                        <td>Tanaka</br>Suika</td>
+                        <td>20</td>
+                        <td>3</td>
+                        <td><a>voir évaluation</a></td>
+                    </tr>
+
+                    <tr class="derouler2">
+                        <td><a>Anglais</a></td>
+                        <td>Nana</td>
+                        <td>20</td>
+                        <td>3</td>
+                        <td><a>voir évaluation</a></td>
+                    </tr>
+
+                    <tr class="derouler2">
+                        <th rowspan=2>Optionnel</th>
+                        <td><a>Mathematiques</a></td>
+                        <td>Nana</td>
+                        <td>18</td>
+                        <td>2</td>
+                        <td><a>voir évaluation</a></td>
+                    </tr>
+
+                    <tr class="derouler2">
+                        <td><a>Geographie</a></td>
+                        <td>Nana</td>
+                        <td>15</td>
+                        <td>1</td>
+                        <td><a>voir évaluation</a></td>
+                    </tr>
+
+
+
+
+
+                </table>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+                <h2>Gestion des promotions</h2>
+
+
+                <div class="flex">
+                    <div class="flex_contenu1">
+                    <h3>Ajouter / Supprimer une matière ou un professeur</h3>
+                    <form action="" method="POST">
+                        <select type="select" name="choixPromo" id="choixPromo">
+                            <option value="daeuA1">DAEU A 1</option>
+                            <option value="daeuB1">DAEU B 1</option>
+                        </select>
+
+                        <select type="select" name="choixMatiereProf" id="choixMatiereProf">
+                            <option value="ajoutMatiere">Ajouter une matière</option>
+                            <option value="supprimerMatiere">Supprimer une matière</option>
+                            <option value="ajoutProf">Ajouter un prof</option>
+                            <option value="supprimerProf">Supprimer un prof</option>
+                        </select>
+
+                        <select type="select" name="choixObligatoireOption" id="choixObligatoireOption">
+                            <option value="obligatoire">Obligatoire</option>
+                            <option value="optionnel">Optionnel</option>
+                        </select>
+
+                        <select type="select" name="nomMatiere" id="nomMatiere">
+                            <option value="" disabled selected>Nom de la matiere</option>
+                            <option value="francais">Francais</option>
+                            <option value="maths">Maths</option>
+                        </select>
+
+                        <input type="text" name="coeff" id="coeff" placeholder="Coefficient">
+
+                        <input type="text" name="nomProf" id="nomProf" placeholder="Nom de l'enseignant">
+
+                        <input type="submit" name="valider" value="valider">
+
+                    </form>
+
+                    <h3>Ajouter une promotion</h3>
+
+                    <form action="" method="POST">
+                        <label for="creerPromo">Créer une promotion :</label>
+                        <select type="select" name="daeu" class="daeu">
+                            <option value="deauA">DAEU A</option>
+                            <option value="daeuB">DAEU B</option>
+                        </select>
+                        <input type="text" name="nomPromo" id="nomPromo" placeholder="Nom de la promotion">
+                    </br>
+                        <label for="dateD">Date de début</label>
+                        <input type="date" name="dateDebut" id="dateDebut">
+
+                        <label for="dateF">Date de fin</label>
+                        <input type="date" name="dateFin" id="dateFin">
+                        
+
+                        <input type="submit" name="valider" value="valider">
+                    </form>
+
+                    </div>
+
+                    <div class="flex_contenu2">
+                        <h3>Les matieres des DAEU</h3>
+                    <table>
+                        <tr><th>Les DAEU</th><th>Matières obligatoires</th><th>Matières optionnels</th></tr>
+                        
+                        <tr>
+                            <td>A</td>
+                            <td>Francais</br>Anglais</td>
+                            <td>Maths</br>Geographie</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>Francais</br>Anglais</td>
+                            <td>Maths</br>Geographie</td>
+                        </tr>
+                    </table>
+
+                    <div>
+                        <form action="" method="POST">
+
+                            <select type="select" name="daeu" class="daeu">
+                                <option value="deauA">DAEU A</option>
+                                <option value="daeuB">DAEU B</option>
+                            </select>
+
+                            <select type="select" name="choixMatiere" id="choixMatiere">
+                                <option value="ajoutMatiere">Ajouter une matière</option>
+                                <option value="supprimerMatiere">Supprimer une matière</option>
+                            </select>
+
+                            <select type="select" name="choixObligatoireOption" id="choixObligatoireOption">
+                                <option value="obligatoire">Obligatoire</option>
+                                <option value="optionnel">Optionnel</option>
+                            </select>
+
+                            <input type="text" name="addMatiere" id="addMatiere" placeholder="Nom de la matière">
+
+                            <input type="submit" name="valider" value="valider">
+                        </form>
+                    </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+            <footer></footer>
+    </div>
+        
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="img/logo.jpg"/>
+	<title>Promotions anciennes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="InfoPromotionAncienne.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    <!-- .wrapper .body .melbanner #btn-menu.okmenu -->
+    <script>
+        function show_hide(){
+            var div = document.getElementById("navbar");
+            var body = document.getElementById("body");
+            var firstButton = document.getElementById("btn-menu1");
+            div.classList.toggle("okmenu");
+            body.classList.toggle("yesmenu");
+            firstButton.classList.toggle("okmenu");
+        }
+        </script>
+    <div class="wrapper">
+        <div class="nav_bar" id="navbar">
+            <img src="img/logo-4.png" id="logo">
+            <button id="btn-menu" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+            <h3>MENU - SECRÉTARIAT</h3>
+            <ul>
+                <li><a href="#"><img src ="img/home.ico"/>ACCUEIL</a></li>
+                <li><a href="#"><img src ="img/search.png"/>RECHERCHER</a></li>
+                <li><a href="infoPromotionNew.html"><img src ="img/diploma.png"/>PROMOTIONS</a></li>
+                <li><a href="#"><img src ="img/user.png"/>MES INFORMATIONS</a></li>
+                <li><a href="#"><img src ="img/deconnexion.png"/>DECONNEXION</a></li>
+            </ul>
+        </div>
+        <div class="body" id="body">
+            <div class="melbanner">
+                <button id="btn-menu1" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+                <img src="img/logo.png" id="logo"/>
+                <input type="text" placeholder="Entrez des mots-clés" id="searchbar"><input type="submit" value="Rechercher" id="submitbutton">
+                <img src="img/david.jpg" id="user"/>
+            </div>
+
+            <div class=contenu>
+                <h2>Toutes les promotions anciennes :</h2>
+                <h3><a href="infoPromotionNew.html"> Les promotions actives</a></h3>
+
+                    <div class="tab">
+                            
+                        <table>
+                            <tr><th>Date de début</th><th>Date de fin</th><th>Nom de la promotion</th><th>Inscrits</th><th>Validé</th><th>Echec</th></tr>
+                            <tr class="titre_annee"><td colspan="6">Année 2019-2020</td></tr>
+                            <tr><td>01/01/20</td><td>01/03/20</td><td><a href="#">DAEU A, trimestre 2</a></td><td>100</td></td><td>67</td><td>37</td></tr>
+                            <tr><td>01/01/20</td><td>01/03/20</td><td><a href="#">DAEU B, trimestre 2</a></td><td>100</td></td><td>94</td><td>6</td></tr>
+                            <tr><td>03/09/19</td><td>01/01/20</td><td><a href="#">DAEU A, trimestre 1</a></td><td>150</td></td><td>148</td><td>2</td></tr>
+                            <tr><td>03/09/19</td><td>01/01/20</td><td><a href="#">DAEU B, trimestre 1</a></td><td>128</td></td><td>108</td><td>20</td></tr>
+                            
+                            </table>
+                    </div>
+
+
+                    
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+            <footer></footer>
+
+        
+
+</body>
+</html>

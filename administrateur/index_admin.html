@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="img/logo.jpg"/>
+	<title>Administrateur - DAEU</title>
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/accueil-secretaire-professeur.css">
+    <link rel="stylesheet" type="text/css" href="css/accueil.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <!-- .wrapper .body .melbanner #btn-menu.okmenu -->
+    <script>
+        function show_hide(){
+            var div = document.getElementById("navbar");
+            var body = document.getElementById("body");
+            var firstButton = document.getElementById("btn-menu1");
+            div.classList.toggle("okmenu");
+            body.classList.toggle("yesmenu");
+            firstButton.classList.toggle("okmenu");
+        }
+        </script>
+    <div class="wrapper">
+        <div class="nav_bar" id="navbar">
+            <img src="img/logo-4.png" id="logo">
+            <button id="btn-menu" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+            <h3>MENU - SECRÉTARIAT</h3>
+            <ul>
+                <li><a href="#"><img src ="img/home.ico"/>ACCUEIL</a></li>
+                <li><a href="#"><img src ="img/search.png"/>RECHERCHER</a></li>
+                <li><a href="#"><img src ="img/diploma.png"/>PROMOTIONS</a></li>
+                <li><a href="#"><img src ="img/settings.png"/>GESTION USER</a></li>
+                <li><a href="#"><img src ="img/graph.ico"/>GRAPHIQUES</a></li>
+                <li><a href="#"><img src ="img/user.png"/>MES INFORMATIONS</a></li>
+                <li><a href="#"><img src ="img/deconnexion.png"/>DECONNEXION</a></li>
+            </ul>
+        </div>
+        <div class="body" id="body">
+           
+            <div class="melbanner">
+            
+                <button id="btn-menu1" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+                <img src="img/logo.png" id="logo"/>
+                <input type="text" placeholder="Entrez des mots-clés" id="searchbar"><input type="submit" value="Rechercher" id="submitbutton">
+                <img src="img/david.jpg" id="user"/>
+            
+            </div>
+            <div class="charts-container" style="position:relative;flex:1;display: flex;flex-direction: row; overflow-x: scroll;">
+                <div class="chart-container" style="position: relative; flex:.5;margin-bottom: 25px;">
+                    <canvas id="myChart"></canvas>
+                </div>
+                
+                <div class="chart-container" style="position: relative;flex:.5;margin-bottom: 25px;">
+                    <canvas id="myChart-2"></canvas>
+                </div>
+            </div>
+            
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'line',
+
+                    // The data for our dataset
+                    data: {
+                labels: [1,2,3,4,5,6,7,8,9,10,11,12],
+                datasets: [{
+                    label: 'nombre de connections élèves',
+                    backgroundColor: 'rgba(255, 99, 132,0)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [100,150, 1000, 1500, 4500]
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                title:{
+                    display :true,
+                    text : 'Evolutions du nombre de connection des élèves au fil de la journée'
+                }
+            }
+});//end graph1
+                var ctx = document.getElementById('myChart-2').getContext('2d');
+                var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'line',
+
+                    // The data for our dataset
+                    data: {
+                labels: [1,2,3,4,5,6,7,8,9,10,11,12],
+                datasets: [{
+                    label: 'Connection des secrétaires',
+                    backgroundColor: 'rgba(255, 99, 132,0)',
+                    borderColor: 'rgb(99, 255, 132)',
+                    data: [0,7, 9, 21, 34,60,67, 69, 21, 34]
+                },{
+                    label: 'Connection des professeurs',
+                    backgroundColor: 'rgba(255, 99, 132,0)',
+                    borderColor: 'rgb(199, 155, 252)',
+                    data: [0, 10, 11, 25, 34,0, 10, 11, 25, 34,66]
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                title:{
+                    display :true,
+                    text : 'Evolutions du nombre de connection au fil de la journée'
+                }
+            }
+});</script>
+            
+            <p>Bilan : il y a xxx absences constatées au cours de cette semaine dont xxx justifiées et donc xxx injustifiées. Les élèves devant justifier leurs absences sont : implode("select nom from user join absences on absence.iDEtudiant=user.iD and absence.justifie!=true;" , " ") <em>PHP</em><br/><br/></p>
+            
+            <h2><br/>Dernières actions</h2><br/>
+            <div class="tababs">
+                    <div class="tab">
+                        
+                        <table>
+                        <tr><th>Date requête</th><th>Nature requête</th><th>Auteur</th><th>Description</th></tr>
+                        <tr><td>01/09/20</td><td>Création utilisateur</td><td>Mme Secrétaire</td><td>Nouvel élève : Mr ______________________</td></tr>                       <tr><td>01/09/20</td><td>Création utilisateur</td><td>Mme Secrétaire</td><td>Nouvel élève : Mr ______________________</td></tr>
+                        <tr><td>01/09/20</td><td>Création contrôle</td><td>Mme Professeur</td><td>Nouvel contrôle module M0000 date 20/09/2009 </td></tr>
+                        <tr><td>01/09/20</td><td>Création utilisateur</td><td>Mme Secrétaire</td><td>Nouvel élève : Mr ______________________</td></tr>
+                        <tr><td>01/09/20</td><td>Supression utilisateur</td><td>Mme Secrétaire</td><td>Descolarisation : Mr ______________________</td></tr>
+                        </table>
+                </div></div><br>
+                
+            <div class='tababs'>
+            <div class="mes-infos">
+                <h2>MES INFORMATIONS</h2>
+                <div class="infos-images">
+                <img src="img/david.jpg" style="height:80px;border:3px solid white;margin-top: auto;margin-bottom: auto;"></div>
+                <div class="infos-text">
+                    <table class="table" style="height:100%">
+                        <tr id="champs-infos"><th>Prénom</th><td>David</td></tr>
+                        <tr id="champs-infos"><th>Naissance</th> <td>22/01/1952</td></tr>
+                        <tr id="champs-infos"><th>Mot de passe :</th> <td>•••••••• <img src="img/edit.png" style="height: 22px;background-color: white; margin-left:.1%;"></td></tr>
+                    </table>
+                </div>    
+            </div>
+            <div class="form-conteneur" style="margin: 0px;">
+                    <form action="" method="post">
+                        <h2>Créer des utilisateurs</h2>
+                        <div class="champ-formulaire">
+                            <p>Prénom</p>
+                            <input type="text" id="name" name="name" placeholder="Prénom"/>
+                        </div>
+                        
+                        <div class="champ-formulaire">
+                            <p>Nom</p>
+                            <input type="text" id="name" name="name" placeholder="Nom"/>
+                        </div>
+                        
+                        <div class="champ-formulaire">
+                            <p>Promo</p>
+                            <select id="sel" name="selection">
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                
+                            </select>
+                        </div>
+                        
+                        <div class="champ-formulaire">
+                            <p>Rôle</p>
+                            <select id="sel" name="role">
+                                <option value="a">Eleve</option>
+                                <option value="b">Professeur</option>
+                                <option value="b">Secrétaire</option>
+                                <option value="b">Admin</option>
+                                
+                            </select>
+                        </div>
+                            
+                        <input type="submit" value="Créer" id="btn"/>
+                    </form>
+            </div></div>
+                <div class="tababs">
+                    <div class="tab">
+                        <h2>Dernières absences</h2>
+                        <input type="text" onkeyup="searchFunction()" id='searchBar2' style="background-color: black; border:2px solid white;width:100%;margin: 2%; height: 10%" placeholder=" Rechercher des mots clés ...">
+                        
+                        <table id="table-data-absences">
+                        
+                        <tr><th>identifiant absence</th><th>Auteur</th><th>Justifiée</th><th>date requête</th><th>modifier</th></tr>
+                        <tr><td>0001</td><td>Mr.AAAAAAAAAAAA</td><td>Oui</td><td>19/10/2020</td><td><a href="modifer" style="text-decoration: underline">modifier</a></td></tr>
+                        <tr><td>0002</td><td>Mr.AAAAAAAAAAAA</td><td>Oui</td><td>19/10/2020</td><td><a href="modifer" style="text-decoration: underline">modifier</a></td></tr>
+                        <tr><td>0003</td><td>Mr.AAAAAAAAAAAA</td><td>Oui</td><td>19/10/2020</td><td><a href="modifer" style="text-decoration: underline">modifier</a></td></tr>
+                        <tr><td>0004</td><td>Mr.AAAAAAAAAAAA</td><td>Oui</td><td>19/10/2020</td><td><a href="modifer" style="text-decoration: underline">modifier</a></td></tr>
+                        <tr><td>0005</td><td>Mr.AAAAAAAAAAAA</td><td>Oui</td><td>19/10/2020</td><td><a href="modifer" style="text-decoration: underline">modifier</a></td></tr>
+                        <tr><td>0006</td><td>Mr.AAAAAAAAAAAA</td><td>Oui</td><td>19/10/2020</td><td><a href="modifer" style="text-decoration: underline">modifier</a></td></tr>
+                        
+                            
+                        </table>
+                    </div>
+                    
+                </div>
+            
+            <div class="tab" style="display: flex;flex-direction: column;overflow-x: scroll">  
+                <h2 style="text-transform: uppercase; margin: 1% 1% 01% 0">Dernièrs contrôles</h2>
+                <table>
+                    
+                    <tr><th>Date contrôle</th><th>module</th><th>date ajout</th><th>auteur</th><th>promo</th><th>Modifier</th></tr>
+                    <tr><td>23/11/2020</td><td>M2000</td><td>25/10/2020</td><td>Mr.Professeur</td><td>A</td><td><a style="text-decoration: underline;">modifier</a></td></tr>
+                     <tr><td>23/11/2020</td><td>M2000</td><td>25/10/2020</td><td>Mr.Professeur</td><td>A</td><td><a style="text-decoration: underline;">modifier</a></td></tr>
+                     <tr><td>23/11/2020</td><td>M2000</td><td>25/10/2020</td><td>Mr.Professeur</td><td>A</td><td><a style="text-decoration: underline;">modifier</a></td></tr>
+                     <tr><td>23/11/2020</td><td>M2000</td><td>25/10/2020</td><td>Mr.Professeur</td><td>A</td><td><a style="text-decoration: underline;">modifier</a></td></tr>
+                </table>
+                
+            </div>
+            
+            <script>
+                        function searchFunction() {
+                            var input,recherche,table,tr,td,i,txt;
+                            input = document.getElementById("searchBar2");
+                            recherche = input.value.toUpperCase();
+                            table = document.getElementById("table-data-absences");
+                            tr = table.getElementsByTagName("tr");
+                            input.style.margin="7%";
+                            for (i=0;i<tr.length;i++){
+                                td = tr[i].getElementsByTagName("td")[0];//choisir la ou les colonnes intéressantes... comm_inthragith
+                                if (td){
+                                    txt = td.textContent || td.innerText;
+                                    if (txt.toUpperCase().indexOf(recherche)>-1){
+                                        tr[i].style.display="";
+                                        
+                                    }else{
+                                        tr[i].style.display="none";
+                                    }
+                                }
+                            } 
+                        }
+                        </script>
+            <footer>
+                <ul>
+                    <li><a href="mentionsleg.html">Mentions légales</a></li>
+                    <li><a href="apropos.html">À Propos - Syages©</a></li>
+                    <li><a href="apropos.html">® Design & Création : Inthragith JEYASEGARAN </a></li>
+                </ul>
+            </footer>
+        </div>
+        
+
+    </div>
+</body>
+</html>

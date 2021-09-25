@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.contgen {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(10px, auto);
+}
+
+.titre{
+  grid-column: 1 / 1;
+  grid-row: 1;
+}
+
+.choixtrim{
+  grid-column: 3 / 3;
+  grid-row: 1;
+}
+
+.container {
+    /* On ajoute une marge sur les cotés de l'écran */
+    padding-right: 15px;
+    padding-left: 15px;
+
+    /* Et on centre */
+    margin-right: auto;
+    margin-left: auto;
+}
+select{
+    color:black;
+    border-radius: 10px;
+}
+option{
+    color:black;
+}
+
+/* Sur les grands écrans, on limite la largeur du contenu */
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+
+
+.wrapper .body .tababs{
+    overflow: hidden;
+}
+.wrapper .body .tababs table td{
+    text-align: center;
+}
+.wrapper .body .tababs table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tab_abs{
+    width:100%;
+}
+rapper .body .tababs table tr,td,th{
+  border : 2px solid white;
+}
+
+
+.wrapper .body .tababs table th {
+    background-color:#A9A9A9;
+}
+
+.wrapper .body .tababs table td,tr,th{padding:10px}
+
+.wrapper .body .tababs tab tr{
+    margin: auto;
+}
+.wrapper .body .tababs  .coule1{
+        background-color: green;
+}
+.wrapper .body .tababs  .coule2{
+        background-color: #8B0000;
+}
+

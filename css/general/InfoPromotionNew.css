@@ -1,0 +1,40 @@
+body, .body, .wrapper{
+    width:100%;
+}
+.wrapper{
+    width:100%;
+}
+
+a{
+    color : #3B59CA;
+}
+.tab {
+    width:100%;
+    
+}
+.tab table{
+    width:85%;
+    border-collapse : collapse;
+    text-align: center;
+    padding:2px;
+}
+.contenu{
+    padding:1em;
+}
+h3{
+    padding:1em 0em;
+}
+#wrapper2{
+    display:flex;
+}
+#container_wrapper2{
+    width:65%;
+}
+#chart, #myChart{
+    width:100%;
+    height:100%;
+    margin-right:5em;
+}
+#chart{
+    margin-top:5%;
+}

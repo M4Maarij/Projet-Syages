@@ -1,0 +1,255 @@
+table {
+border: medium solid white;
+border-collapse: collapse;
+width: 90%;
+color : white;
+
+}
+th {
+
+border: solid white;
+width: 50%;
+padding: 5px;
+background-color: rgba(100,100,255,0.6);
+
+}
+td {
+font-family: sans-serif;
+border: solid white;
+width: 50%;
+padding: 5px;
+text-align: center;
+background-color: black;
+}
+
+h1{
+    font-family: sans-serif;
+    color : white;
+    margin-left : 50%;
+
+}
+tr{
+    border :solid 2px;
+}
+
+body {
+    background-color: black;
+    
+}
+
+button{
+    background-color:#e7e7e7; 
+    color: black;
+    border-radius: 12px; 
+    
+
+}
+.bg:hover{
+    
+    color:red;
+}
+.wrapper .nav_bar #logo{
+    /*image */
+    width:102px;
+    height:33px;
+    margin: 12px;
+    
+}
+
+.wrapper .nav_bar #btn-menu{
+    height:50px;
+    width: 50px;
+    border-radius:10px;
+    margin-right: 12px;
+    background-color:rgba(0,0,0,0.0); 
+    
+}
+
+.wrapper .body .melbanner #btn-menu1{
+    height:50px;
+    width: 50px;
+    border-radius:10px;
+    background-color:rgba(0,0,0,0.0);
+    
+    
+}
+
+.wrapper .body .melbanner #btn-menu1.okmenu{
+    height:50px;
+    width: 50px;
+    border-radius:10px;
+    background-color:rgba(0,0,0,0.0);
+    display:none;
+    
+}
+
+
+
+.wrapper{
+    display:flex;
+    overflow: hidden;
+    position:relative;
+}
+
+.wrapper .nav_bar{
+    position:fixed;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content:space-between;
+    display:none;
+}
+/*IMPORTANT TOGGLE*/
+.wrapper .nav_bar.okmenu{
+    position:fixed;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content:space-between;
+}
+
+.wrapper .nav_bar #menu{
+    width:50px;
+    height:50px;
+    padding-right:4px;
+    padding-bottom: 6px;
+}
+
+.wrapper .body #menu{
+    width:50px;
+    height:50px;
+    padding-right:4px;
+    padding-bottom: 6px;
+}
+
+.wrapper .body{
+    height: 100%;
+    background-color: black;
+    padding-left: 12px;
+    padding-right:12px;
+}
+
+/*IMPORTANT TOGGLE*/
+.wrapper .body.yesmenu{
+    height: 100%;
+    margin-left: 90px;
+    background-color: black;
+    padding-left: 12px;
+    padding-right:12px;
+}
+
+
+.wrapper .body .melbanner #searchbar{ 
+    margin-left:30px;
+    width:40%;
+    margin-left:20px;
+    margin-top:08px;
+    height: 43px;
+    color:white;
+    background-color: black;    
+}
+
+.wrapper .body .melbanner #searchbar:hover{
+    background-color: white;
+    color:black;
+}
+
+.wrapper .body .melbanner #submitbutton{
+    height: 40px;
+    margin-left:2px;
+    width:90px;
+    border : 1px solid white;
+    background-color: rgba(0,0,0);
+    color: white;
+}
+
+.wrapper .body .melbanner #submitbutton:hover{
+    height: 40px;
+    margin-left:2px;
+    width:90px;
+    border : 1px solid white;
+    background-color: rgba(255,255,1);
+    color: black;
+}
+
+#submitbutton{
+    margin-top: 10px;
+    height: 100px;
+    color:black;
+}
+
+.wrapper .body .melbanner{
+    display: flex;
+    overflow: hidden;
+    height: 75px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.wrapper .body .melbanner #logo{
+    /*530 × 435*/
+    display:inline-flex; 
+    overflow: hidden;
+    width:132px;
+    height: 106px;
+}
+.wrapper .body #user{
+    display: inline-flex;
+    overflow: hidden;
+    margin-left: auto;
+    margin-bottom: auto;
+    width:50px;
+    border-radius: 200px;
+    
+}
+
+.nav_bar{
+    background-color: rgba(18,18,23,0.8); 
+    padding-top: 10px;
+    
+}
+
+.wrapper .nav_bar ul li a img{
+   width:30px;
+    margin-top:2px;
+    justify-content: center;
+    
+}
+.wrapper .nav_bar h3{
+    padding: 12px;
+    padding-bottom: 0px;
+    margin: 0px;
+    color:#fff;
+}
+
+.wrapper .nav_bar ul li{
+    padding: 20px;
+    width:100%;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    
+}
+.wrapper .nav_bar ul{
+    width:100%;
+}
+
+.wrapper .nav_bar ul li:hover{
+    background: rgba(100,100,255,0.8);
+    
+}
+
+.wrapper .nav_bar ul li a{
+    color : rgba(255,255,255,0.8);
+    display: block;
+    text-align:left;   
+}
+
+
+
+

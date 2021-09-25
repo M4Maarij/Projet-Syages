@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="img/logo.jpg"/>
+	<title>Mes informations- DAEU</title>
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/accueil-secretaire-professeur.css">
+    <link rel="stylesheet" type="text/css" href="css/accueil.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <!-- .wrapper .body .melbanner #btn-menu.okmenu -->
+    <script>
+        function show_hide(){
+            var div = document.getElementById("navbar");
+            var body = document.getElementById("body");
+            var firstButton = document.getElementById("btn-menu1");
+            div.classList.toggle("okmenu");
+            body.classList.toggle("yesmenu");
+            firstButton.classList.toggle("okmenu");
+        }
+        </script>
+    <div class="wrapper">
+        <div class="nav_bar" id="navbar">
+            <img src="img/logo-4.png" id="logo">
+            <button id="btn-menu" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+            <h3>MENU - SECRÉTARIAT</h3>
+            <ul>
+                <li><a href="#"><img src ="img/home.ico"/>ACCUEIL</a></li>
+                <li><a href="#"><img src ="img/search.png"/>RECHERCHER</a></li>
+                <li><a href="#"><img src ="img/diploma.png"/>PROMOTIONS</a></li>
+                <li><a href="#"><img src ="img/settings.png"/>GESTION USER</a></li>
+                <li><a href="#"><img src ="img/graph.ico"/>GRAPHIQUES</a></li>
+                <li><a href="#"><img src ="img/user.png"/>MES INFORMATIONS</a></li>
+                <li><a href="#"><img src ="img/deconnexion.png"/>DECONNEXION</a></li>
+            </ul>
+        </div>
+        <div class="body" id="body">
+           
+            <div class="melbanner">
+            
+                <button id="btn-menu1" onclick="show_hide()"><img src="img/menu.png" id="menu"></button>
+                <img src="img/logo.png" id="logo"/>
+                <input type="text" placeholder="Entrez des mots-clés" id="searchbar"><input type="submit" value="Rechercher" id="submitbutton">
+                <img src="img/david.jpg" id="user"/>
+            
+            </div>
+            
+            
+            <h2><br/>Mes informations<br></h2><br/>
+            <div class="tababs" style='display: flex;flex-direction: column;'>
+                    <div class="tab" style="flex: auto;" >
+                        
+                        <table style="magin-bottom:12px;">
+                        <tr><th>Nom</th><th>Prénom</th><th>Identifiant</th><th>Promo</th><th>Avatar</th><th>Mail</th><th>Mot de passe</th></tr>
+                        <tr><td>Hébert</td><td>David</td><td>11222000</td><td>Promo A</td><td><img src="img/david.jpg" style="height: 40%"></td><td>d.hebert@mail.com</td><td>•••••••••••</td></tr>
+                        </table>
+                </div>
+                <h2><br>Informations établissement<br></h2><br>
+                <div class="tab" >
+                        
+                        <table style="height: 20%; ">
+                        <tr><th>Etablissement</th><th>Adresse adresse</th><th>élèves</th><th>professeurs</th><th>secrétaires</th></tr>
+                        <tr><td>USPN</td><td>Adresse, 00111 France</td><td>25 000</td><TD>2500</TD><td>1000</td></tr>
+                        </table>
+                </div>
+<div class="form-conteneur" style='margin: :0px;padding: 0px;'><br><br>
+                    <form action="" method="post">
+                        <h2>Changement de mot de passe</h2>
+                        <div class="champ-formulaire">
+                            <p>Ancien mot de passe</p>
+                            <input type="password" id="oldmdp" name="oldmdp" placeholder="Ancien mot de passe"/>
+                            
+                        </div>
+                        
+                        <div class="champ-formulaire">
+                            <p>Nouveau mot de passe </p>
+                            <input type="newmdp" id="newmdp" name="newmdp" placeholder="Nouveau mot de passe"/>
+                            
+                        </div>
+                        
+                        <div class="champ-formulaire">
+                            <p>Nouveau mot de passe </p>
+                            <input type="newmdp" id="newmdp" name="newmdp" placeholder="Nouveau mot de passe"/>
+                            
+                        </div>
+                            
+                        <input type="submit" value="Changer" id="btn"/>
+                    </form>
+                    </div>
+            </div><br>
+                
+            
+            
+            <footer>
+                <ul>
+                    <li><a href="mentionsleg.html">Mentions légales</a></li>
+                    <li><a href="apropos.html">À Propos - Syages©</a></li>
+                    <li><a href="apropos.html">® Design & Création : Inthragith JEYASEGARAN </a></li>
+                </ul>
+            </footer>
+        </div>
+        
+
+    </div>
+</body>
+</html>

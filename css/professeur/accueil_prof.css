@@ -1,0 +1,206 @@
+/***********************************CIRCULAR PROGRESS BAR****************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.wrapper2{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper2{
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 400px;
+
+}
+.wrapper2 .card{
+  background: rgb(7, 7, 7);
+  width: calc(33% - 20px);
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(207, 207, 207, 0.932);
+}
+.wrapper2 .card .circle{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+  
+}
+
+.card .circle .box,
+.card .circle .box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+}
+.card .circle .box{
+  height: 100%;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.card .circle:hover .box{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .box span,
+.wrapper2 .card .text{
+  background: -webkit-linear-gradient(left, #673dda, #42b0fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.circle .box span{
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.card .circle:hover .box span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.card .text{
+  font-size: 20px;
+  font-weight: 600;
+}
+@media(max-width: 753px){
+  .wrapper2{
+    max-width: 700px;
+  }
+  .wrapper2 .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 505px){
+  .wrapper2{
+    max-width: 500px;
+  }
+  .wrapper2 .card{
+    width: 100%;
+  }
+}
+/***************************************************************************/
+/*******************TabPromos ancien et active ******************************/
+
+.wrapper .body .tabpromo{
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3Opx;
+}
+
+.tabB{
+    width: 100%;
+    padding-right: -20%;
+}
+
+.wrapper .body .tabpromo table td{
+    text-align: center;
+}
+
+.wrapper .body .tabpromo table{
+    border-collapse: collapse;
+}
+
+.wrapper .body .tabpromo table tr,td{
+    border: 2px solid rgb(19,17,17);
+}
+
+.wrapper .body .tabpromo table tr:hover{
+    background-color: rgb(1,238,255);
+    color:black;
+}
+
+.wrapper .body .tabpromo table th{
+    background-color: rgba(100,100,255,0.6);
+    border-color: rgba(58,58,211,0.747);
+}
+
+.wrapper .body .tabpromo table td,tr,th{padding: 10px;}
+
+.wrapper .body .tabpromo tabB tr{
+    margin: auto;
+}
+/******************************************************************************/
+/**************************************Tab mes infos **************************/
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(56, 66, 65, 0.15);
+    
+   
+    
+}
+
+.styled-table thead tr {
+    background-color: rgba(100,100,255,0.6);
+    color: #ffffff;
+	text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+	padding: 20px 15px;
+
+
+}
+
+.styled-table tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+
+.styled-table {
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 2%;
+  }
+  
+
+  li {
+
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    
+    padding-right: 5.3333333%;
+}
+
+h1 {
+    margin: 0 0 1.5em;
+    border-bottom: 1px solid #ccc;
+    
+    padding: 0 0 .25em;
+}
+
+/***************************************************
+*               TITRE DE TABS                      *
+***************************************************/
+
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/***************************************************:

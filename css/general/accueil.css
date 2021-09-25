@@ -1,0 +1,173 @@
+/*
+Syages©®
+@author : inthragith;
+@version : 1.0;
+@date : 10/10/2020;
+*/
+
+.wrapper .body .melbanner {
+    display: flex;
+    overflow: hidden;
+    height: 75px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.wrapper .body .melbanner #logo{
+    /*530 × 435*/
+    display:inline-flex; 
+    overflow: hidden;
+    width:132px;
+    height: 106px;
+}
+.wrapper .body #user{
+    display: inline-flex;
+    overflow: hidden;
+    margin-left: auto;
+    margin-bottom: auto;
+    width:50px;
+    border-radius: 200px;
+    
+}
+.wrapper .body .melbanner #searchbar{ 
+    width:40%;
+    margin-left: auto;
+    margin-top:08px;
+    height: 43px;
+    color:white;
+    background-color: black;
+    
+}
+
+.wrapper .body .melbanner #searchbar:hover{
+    background-color: white;
+    color:black;
+}
+
+.wrapper .body .melbanner #submitbutton{
+    height: 40px;
+    margin-left:2px;
+    width:90px;
+    border : 1px solid white;
+    background-color: rgba(0,0,0);
+    color: white;
+}
+
+.wrapper .body .melbanner #submitbutton:hover{
+    height: 40px;
+    margin-left:2px;
+    width:90px;
+    border : 1px solid white;
+    background-color: rgba(255,255,1);
+    color: black;
+}
+
+#submitbutton{
+    margin-top: 10px;
+    height: 100px;
+    color:black;
+}
+.nav_bar{
+    background-color: rgba(18,18,23,0.8); 
+    padding-top: 10px;
+    
+}
+
+.wrapper .nav_bar ul li a img{
+   width:30px;
+    margin-top:2px;
+    justify-content: center;
+    
+}
+.wrapper .nav_bar h3{
+    padding: 12px;
+    padding-bottom: 0px;
+    margin: 0px;
+    color:#fff;
+}
+
+.wrapper .nav_bar ul li{
+    padding: 20px;
+    width:100%;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    
+}
+.wrapper .nav_bar ul{
+    width:100%;
+}
+
+.wrapper .nav_bar ul li:hover{
+    background: rgba(100,100,255,0.8);
+    
+}
+
+.wrapper .nav_bar ul li a{
+    color : rgba(255,255,255,0.8);
+    display: block;
+    text-align:left;   
+}
+
+@media only and screen (max-width:800px){
+    *{
+        font-size:12px;
+    }
+    .wrapper .body .melbanner #searchbar{ 
+    width:100%;
+    margin-left:20px;
+    margin-top:10px;
+    height: 40px;
+    color:white;
+    background-color: rgba(105,105,105,0.3);
+    border:1px solid white;
+    
+}
+}
+.wrapper .body .mes-infos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    margin-bottom: 2%;
+    width:60%;
+    height: auto;
+}
+
+.wrapper .body .mes-infos h2{
+    padding-top: 22px;
+    background-color: rgba(100,100,255,0.8);
+    border:1px solid white;
+    
+}
+
+.wrapper .body .mes-infos .infos-images{
+    border:1px solid white;
+    flex:.5;
+    display: flex;
+    justify-content: center
+    
+}
+
+.wrapper .body .mes-infos .infos-images img{
+    height:80px;
+    border:3px solid white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.wrapper .body .mes-infos .infos-text{
+    border : 1px solid white;
+    flex: 1;
+    display:flex;
+    
+}
+
+.wrapper .body .mes-infos .infos-text .table{
+    border-collapse: collapse;
+    flex:1;
+}
+
+.wrapper .body .mes-infos .infos-text .table #champs-infos{
+    width: 100%;
+    
+}

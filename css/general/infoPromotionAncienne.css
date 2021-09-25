@@ -1,0 +1,29 @@
+body, .body, .wrapper{
+    width:100%;
+}
+.wrapper{
+    width:100%;
+}
+
+a{
+    color : #3B59CA;
+}
+.tab {
+    width:100%;
+    
+}
+.tab table{
+    width:85%;
+    border-collapse : collapse;
+    text-align: center;
+    padding:2px;
+}
+.contenu{
+    padding:1em;
+}
+h3{
+    padding:1em 0em;
+}
+.titre_annee{
+    border-collapse : collapse;
+}
